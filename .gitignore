@@ -1,0 +1,19 @@
+# Ignore node_modules in subfolders (frontend + server)
+**/node_modules/
+
+# Ignore environment variables
+**/.env
+
+# Ignore build/dist folders
+**/build/
+**/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db

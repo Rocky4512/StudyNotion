@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@theme {
+    --font-inter: "Inter", sans-serif;
+    --font-edu-sa: "Edu SA Beginner", cursive;
+    --font-mono: "Roboto Mono", monospace;
+
+  /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-transparent: #ffffff00;
+
+  /* Rich Black Shades */
+    --color-richblack-5: #f1f2ff;
+    --color-richblack-25: #dbddea;
+    --color-richblack-50: #c5c7d4;
+    --color-richblack-100: #afb2bf;
+    --color-richblack-200: #999daa;
+    --color-richblack-300: #838894;
+    --color-richblack-400: #6e727f;
+    --color-richblack-500: #585d69;
+    --color-richblack-600: #424854;
+    --color-richblack-700: #2c333f;
+    --color-richblack-800: #161d29;
+    --color-richblack-900: #000814;
+
+  /* Rich Blue Shades */
+    --color-richblue-5: #ecf5ff;
+    --color-richblue-25: #c6d6e1;
+    --color-richblue-50: #a0b7c3;
+    --color-richblue-100: #7a98a6;
+    --color-richblue-200: #537988;
+    --color-richblue-300: #2d5a6a;
+    --color-richblue-400: #073b4c;
+    --color-richblue-500: #063544;
+    --color-richblue-600: #042e3b;
+    --color-richblue-700: #032833;
+    --color-richblue-800: #01212a;
+    --color-richblue-900: #001b22;
+
+  /* Blue Shades */
+    --color-normalblue-5: #eaf5ff;
+    --color-normalblue-25: #b4daec;
+    --color-normalblue-50: #7ec0d9;
+    --color-normalblue-100: #47a5c5;
+    --color-normalblue-200: #118ab2;
+    --color-normalblue-300: #0f7a9d;
+    --color-normalblue-400: #0c6a87;
+    --color-normalblue-500: #0a5a72;
+    --color-normalblue-600: #074b5d;
+    --color-normalblue-700: #053b48;
+    --color-normalblue-800: #022b32;
+    --color-normalblue-900: #001b1d;
+
+  /* Caribbean Green Shades */
+    --color-caribbeangreen-5: #c1fffd;
+    --color-caribbeangreen-25: #83f1de;
+    --color-caribbeangreen-50: #44e4bf;
+    --color-caribbeangreen-100: #06d6a0;
+    --color-caribbeangreen-200: #05bf8e;
+    --color-caribbeangreen-300: #05a77b;
+    --color-caribbeangreen-400: #049069;
+    --color-caribbeangreen-500: #037957;
+    --color-caribbeangreen-600: #026144;
+    --color-caribbeangreen-700: #014a32;
+    --color-caribbeangreen-800: #01321f;
+    --color-caribbeangreen-900: #001b0d;
+
+  /* Brown Shades */
+    --color-brown-5: #fff4c4;
+    --color-brown-25: #ffe395;
+    --color-brown-50: #ffd166;
+    --color-brown-100: #e7bc5b;
+    --color-brown-200: #cfa64f;
+    --color-brown-300: #b89144;
+    --color-brown-400: #a07c39;
+    --color-brown-500: #88662d;
+    --color-brown-600: #705122;
+    --color-brown-700: #593c17;
+    --color-brown-800: #41260b;
+    --color-brown-900: #291100;
+
+  /* Pink Shades */
+    --color-richpink-5: #fff1f1;
+    --color-richpink-25: #fbc7d1;
+    --color-richpink-50: #f79cb0;
+    --color-richpink-100: #f37290;
+    --color-richpink-200: #ef476f;
+    --color-richpink-300: #d43d63;
+    --color-richpink-400: #ba3356;
+    --color-richpink-500: #9f294a;
+    --color-richpink-600: #841e3e;
+    --color-richpink-700: #691432;
+    --color-richpink-800: #4f0a25;
+    --color-richpink-900: #340019;
+
+  /* Yellow Shades */
+    --color-richyellow-5: #fff970;
+    --color-richyellow-25: #ffe83d;
+    --color-richyellow-50: #ffd60a;
+    --color-richyellow-100: #e7c009;
+    --color-richyellow-200: #cfab08;
+    --color-richyellow-300: #b69507;
+    --color-richyellow-400: #9e8006;
+    --color-richyellow-500: #866a04;
+    --color-richyellow-600: #6e5503;
+    --color-richyellow-700: #553f02;
+    --color-richyellow-800: #3d2a01;
+    --color-richyellow-900: #251400;
+
+  /* Pure Greys */
+    --color-pure-greys-5: #f9f9f9;
+    --color-pure-greys-25: #e2e2e2;
+    --color-pure-greys-50: #cccccc;
+    --color-pure-greys-100: #b5b5b5;
+    --color-pure-greys-200: #9e9e9e;
+    --color-pure-greys-300: #888888;
+    --color-pure-greys-400: #717171;
+    --color-pure-greys-500: #5b5b5b;
+    --color-pure-greys-600: #444444;
+    --color-pure-greys-700: #2d2d2d;
+    --color-pure-greys-800: #171717;
+    --color-pure-greys-900: #141414;
+
+    /* Max Widths */
+    --max-w-[1260px]: 1260px;
+    --max-w-[1260px]Tab: 650px;
+}
