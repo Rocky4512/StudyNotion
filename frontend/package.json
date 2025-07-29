@@ -33,8 +33,7 @@
     "react-type-animation": "^3.2.0",
     "redux-toolkit": "^1.1.2",
     "swiper": "^11.2.10",
-    "tailwindcss": "^4.1.11",
-    "video-react": "^0.16.0"
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
