@@ -1,15 +1,14 @@
-import React from "react";
-import copy from "copy-to-clipboard";
-import { toast } from "react-hot-toast";
-import { BsFillCaretRightFill } from "react-icons/bs";
-import { FaShareSquare } from "react-icons/fa";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+    import React from "react";
+    import { toast } from "react-hot-toast";
+    import { BsFillCaretRightFill } from "react-icons/bs";
+    import { FaShareSquare } from "react-icons/fa";
+    import { useDispatch, useSelector } from "react-redux";
+    import { useNavigate } from "react-router-dom";
 
-import { addToCart } from "../../../slices/cartSlice";
-import { ACCOUNT_TYPE } from "../../../utils/constants";
+    import { addToCart } from "../../../slices/cartSlice";
+    import { ACCOUNT_TYPE } from "../../../utils/constants";
 
-function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
+    function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
     const { user } = useSelector((state) => state.profile);
     const { token } = useSelector((state) => state.auth);
     const navigate = useNavigate();
@@ -26,9 +25,19 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
     const isEnrolled = user && studentsEnrolled.includes(user._id);
 
     const handleShare = () => {
-        copy(window.location.href)
-        toast.success("Link copied to clipboard")
-}
+        if (navigator.share) {
+        navigator
+            .share({
+            title: courseName,
+            text: "Check out this course!",
+            url: window.location.href,
+            })
+            .then(() => toast.success("Thanks for sharing!"))
+            .catch(() => toast.error("Sharing failed or cancelled"));
+        } else {
+        toast("Sharing is not supported on this device.");
+        }
+    };
 
     const handleAddToCart = () => {
         if (user?.accountType === ACCOUNT_TYPE.INSTRUCTOR) {
@@ -114,4 +123,4 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
     );
     }
 
-export default CourseDetailsCard;
+    export default CourseDetailsCard;
