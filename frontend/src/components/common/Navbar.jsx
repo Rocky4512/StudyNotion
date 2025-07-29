@@ -9,7 +9,7 @@ import { apiConnector } from "../../services/apiConnector";
 import { categories } from "../../services/apis";
 import { ACCOUNT_TYPE } from "../../utils/constants";
 import { useSelector } from "react-redux";
-import ProfileDropdown from "../core/Auth/ProfileDropDown";
+import ProfileDropdown from "../core/auth/ProfileDropDown";
 
 const Navbar = () => {
 
