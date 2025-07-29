@@ -1,0 +1,29 @@
+{
+  "name": "studynotion",
+  "version": "1.0.0",
+  "description": "![License](https://img.shields.io/badge/License-MIT-green.svg)\r ![Stack](https://img.shields.io/badge/Stack-MERN-blue)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rocky4512/StudyNotion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rocky4512/StudyNotion/issues"
+  },
+  "homepage": "https://github.com/Rocky4512/StudyNotion#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.11.0",
+    "react-hook-form": "^7.61.1",
+    "react-otp-input": "^3.1.1",
+    "react-redux": "^9.2.0",
+    "react-stars": "^2.2.5",
+    "swiper": "^11.2.10"
+  }
+}
