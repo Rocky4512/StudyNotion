@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_APP_BASE_URL ?? "https://studynotion-backend-ur6y.onrender.com";
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
 // AUTH ENDPOINTS
 export const endpoints = {
