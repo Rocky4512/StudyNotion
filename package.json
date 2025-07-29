@@ -4,7 +4,9 @@
   "description": "![License](https://img.shields.io/badge/License-MIT-green.svg)\r ![Stack](https://img.shields.io/badge/Stack-MERN-blue)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix server\"",
+    "build": "npm run build --prefix frontend",
+    "start": "npm run dev --prefix server"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,8 @@
     "react-redux": "^9.2.0",
     "react-stars": "^2.2.5",
     "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
   }
 }
